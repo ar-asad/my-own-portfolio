@@ -6,14 +6,14 @@ const Navbar = () => {
     const menuItem = <>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/about'>About</Link></li>
-        <li><Link to='/'>Skills</Link></li>
-        <li><Link to='/'>Services</Link></li>
-        <li><Link to='/'>Projects</Link></li>
-        <li><Link to='/'>Contact</Link></li>
+        <li><Link to='/skill'>Skills</Link></li>
+        <li><Link to='/service'>Services</Link></li>
+        <li><Link to='/project'>Projects</Link></li>
+        <li><Link to='/contact'>Contact</Link></li>
     </>
 
     return (
-        <div className="navbar bg-cyan-900 text-sky-100">
+        <div className="navbar fixed z-10 max-w-6xl bg-cyan-900 text-sky-100">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
