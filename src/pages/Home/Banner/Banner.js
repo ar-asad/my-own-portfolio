@@ -8,7 +8,7 @@ const Banner = () => {
     return (
         <div className="hero lg:min-h-screen lg:pt-12 pt-20 lg:w-full">
             <div className="hero-content flex-col lg:flex-row-reverse lg:gap-20  ">
-                <img src={face} className="max-w-sm rounded-lg lg:w-1/2 w-4/5 mask mask-squircle lg:mb-0 mb-6" alt='face' />
+                <img src={face} className="wavy-image max-w-sm rounded-lg lg:w-1/2 w-4/5 mask mask-squircle lg:mb-0 mb-6" alt='face' />
                 <div className='lg:w-1/2 w-4/5 text-sky-100'>
                     <p className='lg:text-2xl text-base uppercase font-semibold lg:mb-3'>Hi there! I'M</p>
                     <h1 className="text-2xl lg:text-5xl font-bold mb-3">Asaduzzaman <span className='text-amber-500' >Asad</span></h1>

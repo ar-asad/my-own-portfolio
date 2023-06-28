@@ -1,22 +1,30 @@
 import React from 'react';
-import heroImg from '../../images/banner/hero.jpg';
+import heroImg from '../../images/banner/hero2.jpg';
 import '../Home/Banner/Banner.css';
 import { BiAward, BiBriefcaseAlt2, BiSupport } from "react-icons/bi";
 import '../Home/Home/Home.css';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
+
 const About = () => {
     return (
         <div id='about' className='lg:w-10/12 lg:mx-auto lg:px-0 px-8 lg:pt-0 pt-10'>
-            <div className=' text-start text-sky-100'>
-                <p className='sub-title lg:mb-2'>some info</p>
-                <h1 className="text-2xl lg:text-3xl font-semibold mb-3">ABOUT ME</h1>
+            <div className=' text-start text-sky-100 lg:mb-0 mb-8'>
+                <p data-aos="fade-left" className='sub-title lg:mb-2'>some info</p>
+                <h1 data-aos="fade-right" className="text-2xl lg:text-3xl font-semibold mb-3">ABOUT ME</h1>
             </div>
-            <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-0 items-center">
-
-                <div className='max-w-sm flex justify-end'>
-                    <img src={heroImg} className=" lg:w-full h-full text-end mask mask-squircle rounded " alt='Asad' />
+            <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-8 lg:mt-2 items-center">
+                <div data-aos="fade-right"
+                    data-aos-duration="1500"
+                    className='mx-w-sm flex justify-end lg:h-4/5 h-full lg:mb-0 mb-10'>
+                    <img src={heroImg} className=" lg:w-4/5 object-contain text-end mask mask-squire " alt='Asad' />
                 </div>
-                <div className='  text-sky-100 lg:w-11/12'>
+                <div data-aos="fade-left"
+                    data-aos-duration="1500"
+                    className=' text-sky-100 lg:w-11/12'>
                     <div className='grid lg:grid-cols-3 gap-5 lg:mt-10'>
                         <div className='text-center p-6 shadow-lg shadow-amber-600  bg-cyan-900  rounded'>
                             <div className='flex justify-center'><BiAward className='w-6 text-amber-500 h-6 mb-2'></BiAward></div>

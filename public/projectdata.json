@@ -1,18 +1,18 @@
 [
     {
         "id": "fs1",
-        "name": "Yogane",
-        "mainImage": "/images/project-image/automotive-home.png",
+        "name": "AutoMotive",
+        "mainImage": "/images/project-image/yogne-home.png",
         "images": [
             {
                 "id": 1,
                 "title": "Booking Section",
-                "image": "/images/project-image/auto-toy.png"
+                "image": "/images/project-image/yogne-dashboard.png"
             },
             {
                 "id": 2,
                 "title": "Dashboard",
-                "image": "/images/project-image/auto-car.png"
+                "image": "/images/project-image/yogne-class.png"
             }
         ],
         "link": "https://dent-care-39dfe.firebaseapp.com/",
@@ -43,18 +43,18 @@
     },
     {
         "id": "fs2",
-        "name": "AutoMotive",
-        "mainImage": "/images/project-image/yogne-home.png",
+        "name": "Yogane",
+        "mainImage": "/images/project-image/automotive-home.png",
         "images": [
             {
                 "id": 1,
                 "title": "Booking Section",
-                "image": "/images/project-image/yogne-dashboard.png"
+                "image": "/images/project-image/auto-toy.png"
             },
             {
                 "id": 2,
                 "title": "Dashboard",
-                "image": "/images/project-image/yogne-class.png"
+                "image": "/images/project-image/auto-car.png"
             }
         ],
         "link": "https://dent-care-39dfe.firebaseapp.com/",
