@@ -2,6 +2,7 @@ import React from 'react';
 import { HiOutlineMail } from "react-icons/hi";
 import { BsTelephoneInbound } from "react-icons/bs";
 import { ImLocation } from "react-icons/im";
+import '../../Home/Home/Home.css';
 
 const ContactMe = () => {
 
@@ -12,7 +13,7 @@ const ContactMe = () => {
     return (
         <div id='contact' className='lg:w-10/12 lg:mx-auto mt-14 lg:px-0 px-8'>
             <div className=' text-start text-sky-100 mb-10'>
-                <p id='sub-title' className='lg:mb-2'>say hello</p>
+                <p className='lg:mb-2 sub-title'>say hello</p>
                 <h1 className="text-2xl lg:text-3xl font-semibold mb-3">CONTACT</h1>
             </div>
             <div className="grid lg:grid-cols-2 grid-cols-1 gap-10 items-center">

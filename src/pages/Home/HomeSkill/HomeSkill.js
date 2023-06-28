@@ -15,16 +15,17 @@ import vscode from '../../../images/logos/icons8-visual-studio-code-2019-480.png
 import netlify from '../../../images/logos/icons8-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites.-96.png';
 import reactapi from '../../../images/logos/api.png';
 import express from '../../../images/logos/icons8-express-js-512.png';
+import '../Home/Home.css';
 
 const HomeSkill = () => {
     return (
         <div className='lg:w-10/12 lg:mx-auto text-sky-100 lg:px-0 px-6 lg:py-10'>
             <div className=' text-start text-sky-100'>
-                <p id='sub-title' className='lg:mb-2'>check out</p>
+                <p className='lg:mb-2 sub-title'>check out</p>
                 <h1 className="text-2xl lg:text-3xl font-semibold mb-3">TECHNICAL SKILL</h1>
             </div>
             <div className='pt-6'>
-                <div className='grid lg:grid-cols-6 grid-cols-4 gap-3 bg-white text-black lg:p-12 p-6  rounded'>
+                <div className='grid lg:grid-cols-6 grid-cols-4 gap-3 bg-white text-black lg:p-12 p-6 shadow-xl shadow-amber-600 rounded'>
                     <div className='flex justify-center flex-col items-center'>
                         <img className='lg:w-14 w-10' src={html} alt="logo" />
                         <p className=''>HTML</p>

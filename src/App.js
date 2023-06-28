@@ -4,7 +4,7 @@ import router from './pages/Router/Routes/Routes';
 
 function App() {
   return (
-    <div data-theme="light" className='bg-sky-950 '>
+    <div data-theme="light" style={{ backgroundColor: '#0b073c' }}>
       <RouterProvider router={router}>
 
       </RouterProvider>

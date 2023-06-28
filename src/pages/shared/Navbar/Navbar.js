@@ -6,9 +6,9 @@ const Navbar = () => {
     const menuItem = <>
         <li><Link to='/'>Home</Link></li>
         <li><a href='#about'>About</a></li>
-        <li><Link to='/project'>Projects</Link></li>
+        <li><a href='#project'>Projects</a></li>
         <li><Link to='/skill'>Skills</Link></li>
-        <li><Link to='/service'>Services</Link></li>
+        <li><a href='#service'>Services</a></li>
         <li><a href='#contact'>Contact</a></li>
     </>
 

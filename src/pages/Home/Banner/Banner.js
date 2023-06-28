@@ -1,6 +1,6 @@
 import React from 'react';
 import face from '../../../images/banner/face.jpg';
-import './Banner.css';
+import '../Home/Home.css';
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FcDownload } from "react-icons/fc";
 
@@ -12,8 +12,8 @@ const Banner = () => {
                 <div className='lg:w-1/2 w-4/5 text-sky-100'>
                     <p className='lg:text-2xl text-base uppercase font-semibold lg:mb-3'>Hi there! I'M</p>
                     <h1 className="text-2xl lg:text-5xl font-bold mb-3">Asaduzzaman <span className='text-amber-500' >Asad</span></h1>
-                    <p className='sub-title text-2xl font-semibold text-slate-400 mb-4'>Web Developer</p>
-                    <p className='lg:text-lg font-medium lg:mb-12 mb-8 lg:tracking-wide text-justify tracking-normal'>Learning <span className='text-amber-500'>Back-End Web Development</span> passionate about creating interactive applications and experiences on the web.</p>
+                    <p className='sub-title text-2xl font-semibold text-slate-400 mb-4'> Web Developer</p>
+                    <p className='lg:text-lg font-medium lg:mb-12 mb-8 lg:tracking-wide text-justify tracking-normal lg:w-10/12'>Learning <span className='text-amber-500 '>Back-End Web Development</span> passionate about creating interactive applications and experiences on the web.</p>
                     <div className='flex gap-3 lg:mb-5 mb-3'>
                         <FaGithub className='w-6 text-amber-500 h-6'></FaGithub>
                         <FaLinkedin className='w-6 text-amber-500 h-6'></FaLinkedin>

@@ -2,7 +2,6 @@ import About from "../../About/About";
 import Contact from "../../Contact/Contact";
 import Home from "../../Home/Home/Home";
 import Main from "../../Layout/Main";
-import Projects from "../../Projects/Projects";
 import Services from "../../Services/Services";
 import Skills from "../../Skills/Skills";
 
@@ -29,10 +28,6 @@ const router = createBrowserRouter([
             {
                 path: '/service',
                 element: <Services></Services>
-            },
-            {
-                path: '/project',
-                element: <Projects></Projects>,
             },
             {
                 path: '/contact',

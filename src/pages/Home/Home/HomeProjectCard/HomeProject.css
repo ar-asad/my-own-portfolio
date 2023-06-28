@@ -1,0 +1,4 @@
+.btn-move:hover .enty-move {
+    transform: translateX(4px);
+
+}
