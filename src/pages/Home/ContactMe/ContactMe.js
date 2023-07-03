@@ -3,17 +3,53 @@ import { HiOutlineMail } from "react-icons/hi";
 import { BsTelephoneInbound } from "react-icons/bs";
 import { ImLocation } from "react-icons/im";
 import '../../Home/Home/Home.css';
+import emailjs from 'emailjs-com';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { toast } from 'react-hot-toast';
 
 AOS.init();
 
 const ContactMe = () => {
 
-    const handleAddClass = event => {
+    const sendMail = event => {
+        event.preventDefault();
+        const form = event.target;
+        const name = form.name.value;
+        const email = form.email.value;
+        const message = form.message.value;
+        console.log(name, email, message)
 
-    }
+        // EmailJS parameters
+        const serviceId = 'service_b2jjp47';
+        const templateId = 'template_72r8duw';
+        const userId = 'MKkL4kttQMsGJSP93';
+
+        // Prepare the email template parameters
+        const templateParams = {
+            to_name: 'Asaduzzaman',
+            from_name: name,
+            from_email: email,
+            message: message,
+        };
+
+        // Send the email using EmailJS
+        emailjs.send(serviceId, templateId, templateParams, userId)
+            .then((result) => {
+                toast.success("Message send successfully");
+                console.log(result.text);
+                // ('Success!', response.status, response.text);
+                // alert('Email sent!');
+            })
+            .catch((error) => {
+                toast.error("Sorry fail to send message");
+                console.log(error.text);
+                // console.error('Error:', error);
+                // alert('Email failed to send!');
+            });
+    };
+
 
     return (
         <div id='contact' className='lg:w-10/12 lg:mx-auto mt-14 lg:px-0 px-8 mb-10'>
@@ -26,7 +62,7 @@ const ContactMe = () => {
                 <form
                     data-aos="fade-right"
                     data-aos-duration="1500"
-                    onSubmit={handleAddClass} className='lg:w-10/12 lg:mx-auto' >
+                    onSubmit={sendMail} className='lg:w-10/12 lg:mx-auto' >
                     <div>
                         <label
                             htmlFor="classname"
@@ -35,7 +71,7 @@ const ContactMe = () => {
                             Name
                         </label>
                         <div className="flex flex-col items-start">
-                            <input type="text" name='classname' className="mt-1 block w-full px-3 py-2 bg-transparent border border-slate-300 rounded text-sm shadow-lg focus:outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500 focus:shadow-cyan-500 focus:shadow-md mb-4" required />
+                            <input type="text" placeholder='Insert your name' name='name' className="mt-1 block w-full px-3 py-2 bg-transparent border border-slate-300 rounded text-sm shadow-lg focus:outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500 focus:shadow-cyan-500 focus:shadow-md mb-4 text-white" required />
                         </div>
                     </div>
                     <div>
@@ -47,7 +83,7 @@ const ContactMe = () => {
                                 Email
                             </label>
                             <div className="flex flex-col items-start">
-                                <input type="email" name='email' className="mt-1 block w-full px-3 py-2 bg-transparent border border-slate-300 rounded text-sm shadow-sm focus:outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500 focus:shadow-cyan-500 focus:shadow-md mb-3" required />
+                                <input type="email" placeholder='Insert your email' name='email' className="mt-1 block w-full px-3 py-2 bg-transparent border border-slate-300 rounded text-sm shadow-sm focus:outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500 focus:shadow-cyan-500 focus:shadow-md mb-3 text-white" required />
                             </div>
                         </div>
 
@@ -59,13 +95,13 @@ const ContactMe = () => {
                                 Message
                             </label>
                             <div className="flex flex-col items-start">
-                                <textarea rows="4" type="text" name='description' className="textarea mt-1 block w-full px-3 py-2 bg-transparent border border-slate-300 rounded text-sm shadow-sm focus:outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500 focus:shadow-cyan-500 focus:shadow-md " required ></textarea>
+                                <textarea placeholder='Write your project' rows="4" type="text" name='message' className="textarea mt-1 block w-full px-3 py-2 bg-transparent border border-slate-300 rounded text-sm shadow-sm focus:outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500 focus:shadow-cyan-500 focus:shadow-md  text-white" required ></textarea>
                             </div>
                         </div>
                     </div>
 
                     <div className="  mt-4">
-                        <button className="btn btn-warning btn-sm text-sky-100 font-semibold bg-amber-500 rounded-full  mb-4 mr-5 ">Send Message</button>
+                        <button type='submit' className="btn btn-warning btn-sm text-sky-100 font-semibold bg-amber-500 rounded-full  mb-4 mr-5 ">Send Message</button>
                     </div>
                 </form>
                 <div

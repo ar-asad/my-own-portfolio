@@ -1,8 +1,7 @@
-import About from "../../About/About";
-import Contact from "../../Contact/Contact";
+
 import Home from "../../Home/Home/Home";
+import HomeProjectDetails from "../../Home/Home/HomeProjectDetails/HomeProjectDetails";
 import Main from "../../Layout/Main";
-import Services from "../../Services/Services";
 import Skills from "../../Skills/Skills";
 
 const { createBrowserRouter } = require("react-router-dom");
@@ -21,6 +20,12 @@ const router = createBrowserRouter([
                 path: '/skill',
                 element: <Skills></Skills>
             },
+            {
+                path: '/project/:id',
+                element: <HomeProjectDetails></HomeProjectDetails>,
+                // loader: ({ params }) => fetch(`/projectdata.json/${params.id}`)
+
+            }
         ]
     }
 

@@ -11,9 +11,10 @@ AOS.init();
 const HomeProject = () => {
     const [projects, setProjects] = useState([]);
     const [tabIndex, setTabIndex] = useState(0);
+    const [projectLength, setProjectLength] = useState(3)
 
     useEffect(() => {
-        fetch('/projectdata.json')
+        fetch('projectdata.json')
             .then(res => res.json())
             .then(data => setProjects(data))
     }, [])
@@ -31,7 +32,7 @@ const HomeProject = () => {
             <div>
                 <Tabs defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
                     <TabList className='text-white flex lg:gap-6 text-lg lg:w-2/5 lg:mx-auto'>
-                        <Tab className='px-2'>All <span className='px-2 border rounded-full'>{allProjects.length}</span></Tab>
+                        <Tab onClick={() => setProjectLength(allProjects.length)} className='px-2'>All {projectLength > 0 && <span className='px-2 border rounded-full'>{projectLength}</span>}</Tab>
                         <Tab className='px-2'>Frontend</Tab>
                         <Tab className='px-2'>Bankend</Tab>
                         <Tab className='px-2'>Fullstack</Tab>
@@ -39,6 +40,7 @@ const HomeProject = () => {
                     <div data-aos="fade-up"
                         data-aos-anchor-placement="top-bottom"
                         data-aos-duration="1500"
+                        data-aos-delay="300"
                         className='mt-14'>
                         <TabPanel className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 '>
                             {

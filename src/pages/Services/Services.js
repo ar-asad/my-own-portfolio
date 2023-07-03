@@ -21,6 +21,7 @@ const Services = () => {
                     data-aos="fade-up"
                     data-aos-anchor-placement="top-bottom"
                     data-aos-duration="1500"
+                    data-aos-delay="300"
                     className='grid lg:grid-cols-3 sm:grid-cols-1 gap-6'>
                     <div className='text-start pb-20 pt-16 px-10 bg-cyan-900 shadow-lg shadow-amber-600  rounded'>
                         <p className='mb-6'><MdOutlineWeb className='w-16 h-16 text-amber-500'></MdOutlineWeb></p>
