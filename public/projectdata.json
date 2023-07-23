@@ -16,7 +16,7 @@
             }
         ],
         "link": "https://yogane-e1b89.web.app/",
-        "description": "A Full Stack Application For Managing A Clinic Center. Users, Doctors, And Admins Can Manage Their Activities. A Role Based Authentication System. Implement A Multi-Layer Dashboard. Connect Server Side For Role Based Access To A Secure API",
+        "description": "A Full Stack Application For booking yoga class in students. Users, Class-Instructor, And Admins Can Manage Their Activities. A Role Based Authentication System. Implement A Multi-Layer Dashboard. Connect Server Side For Role Based Access To A Secure API",
         "overView": [
             "⛔The Website's data is stored in MongoDB and retrieved via the server-side API where I used Express JS",
             "⛔Implemented Firebase Authentication (Google Sign in & Email/Password Login). Private Route & Admin Route is implemented for security purposes",
@@ -58,12 +58,12 @@
             }
         ],
         "link": "https://toy-town-7fb1e.firebaseapp.com",
-        "description": "A Full Stack Application For Managing A Clinic Center. Users, Doctors, And Admins Can Manage Their Activities. A Role Based Authentication System. Implement A Multi-Layer Dashboard. Connect Server Side For Role Based Access To A Secure API",
+        "description": "This is a one kind of toy car selling website.In this home component User can see category wise toy car and see the viewdetails a specific car.",
         "overView": [
             "⛔The Website's data is stored in MongoDB and retrieved via the server-side API where I used Express JS",
-            "⛔Implemented Firebase Authentication (Google Sign in & Email/Password Login). Private Route & Admin Route is implemented for security purposes",
-            "⛔Separate Dashboard available for users and Admins with different facilities",
-            "⛔Used Stripe for making payment gateway"
+            "⛔Implemented Firebase Authentication (Google Sign in & Email/Password Login).",
+            "⛔Add any toy car",
+            "⛔Delete any toy car"
         ],
         "technology": [
             "♨️ReactJS",
@@ -85,8 +85,70 @@
     },
     {
         "id": "fs3",
+        "name": "Nexter",
+        "mainImage": "/images/project-image/nexter-home.png",
+        "images": [
+            {
+                "id": 1,
+                "title": "Gallery Section",
+                "image": "/images/project-image/nexter-gallery.png"
+            },
+            {
+                "id": 2,
+                "title": "Home Section",
+                "image": "/images/project-image/nexter-card.png"
+            }
+        ],
+        "link": "https://coruscating-licorice-0f60b9.netlify.app/",
+        "description": "A Static Website For booking hotel in different place place in the word",
+        "overView": [
+            "⛔Designed full website using only vanilla css",
+            "⛔Used SASS for write better CSS code",
+            "⛔used advanced css grid-system with full-application"
+        ],
+        "technology": [
+            "♨️HTML",
+            "♨️CSS",
+            "♨️SASS"
+        ],
+        "gitHubFrontEnd": "https://github.com/ar-asad/Nexter-Project-final",
+        "category": "frontend"
+    },
+    {
+        "id": "fs4",
+        "name": "Omnifood",
+        "mainImage": "/images/project-image/omni-banner.png",
+        "images": [
+            {
+                "id": 1,
+                "title": "How Works Section",
+                "image": "/images/project-image/omni-phone.png"
+            },
+            {
+                "id": 2,
+                "title": "Review Section",
+                "image": "/images/project-image/omni-review.png"
+            }
+        ],
+        "link": "https://earnest-crumble-0b564a.netlify.app/",
+        "description": "A Static Resturant website",
+        "overView": [
+            "⛔Designed full website using only vanilla css",
+            "⛔Used SASS for write better CSS code",
+            "⛔used advanced css flex-system with full-application"
+        ],
+        "technology": [
+            "♨️HTML",
+            "♨️CSS",
+            "♨️SASS"
+        ],
+        "gitHubFrontEnd": "https://github.com/ar-asad/omnifood-project",
+        "category": "frontend"
+    },
+    {
+        "id": "fs5",
         "name": "ThaifoodMaster",
-        "mainImage": "/images/project-image/tahi-home.png",
+        "mainImage": "/images/project-image/thai-home.png",
         "images": [
             {
                 "id": 1,
@@ -102,13 +164,17 @@
         "link": "https://thaifoodmaster-302a1.web.app/",
         "description": "A Static Website For Booking Tours Around The World",
         "overView": [
-            "⛔Designed full website using only vanilla css",
-            "⛔Used SASS for write better CSS code"
+            "⛔This website offers Thai food prepared by Thai chefs.",
+            "⛔It is possible to view all the dishes prepared by each chef and to view the details of his details information.",
+            "⛔In the menu, users can add their favorite foods as favorites."
         ],
         "technology": [
-            "♨️HTML",
-            "♨️CSS",
-            "♨️SASS"
+            "♨️ReactJS",
+            "♨️Tailwind CSS",
+            "♨️Firebase",
+            "♨️React Router",
+            "♨️DaisyUI",
+            "♨️React Toastify"
         ],
         "gitHubFrontEnd": "https://github.com/ar-asad/thaifoodmaster-client",
         "gitHubBackEnd": "https://github.com/ar-asad/thaifoodmaster-server-side",

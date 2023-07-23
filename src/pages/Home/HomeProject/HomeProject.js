@@ -11,7 +11,7 @@ AOS.init();
 const HomeProject = () => {
     const [projects, setProjects] = useState([]);
     const [tabIndex, setTabIndex] = useState(0);
-    const [projectLength, setProjectLength] = useState(3)
+    const [projectLength, setProjectLength] = useState(5)
 
     useEffect(() => {
         fetch('projectdata.json')
@@ -22,7 +22,6 @@ const HomeProject = () => {
     const frontEnd = projects.filter(project => project.category === 'frontend');
     const fullStact = projects.filter(project => project.category === 'fullstack');
     const backend = projects.filter(project => project.category === 'backend');
-
     return (
         <div id='project' className='lg:w-10/12 lg:mx-auto mt-16 lg:px-0 px-8'>
             <div className=' text-start text-sky-100 mb-10'>
@@ -32,7 +31,7 @@ const HomeProject = () => {
             <div>
                 <Tabs defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
                     <TabList className='text-white flex lg:gap-6 text-lg lg:w-2/5 lg:mx-auto'>
-                        <Tab onClick={() => setProjectLength(allProjects.length)} className='px-2'>All {projectLength > 0 && <span className='px-2 border rounded-full'>{projectLength}</span>}</Tab>
+                        <Tab onClick={() => setProjectLength(projectLength)} className='px-2'>All {projectLength > 0 && <span className='px-2 border rounded-full'>{projectLength}</span>}</Tab>
                         <Tab className='px-2'>Frontend</Tab>
                         <Tab className='px-2'>Bankend</Tab>
                         <Tab className='px-2'>Fullstack</Tab>

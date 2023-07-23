@@ -5,7 +5,7 @@ import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FcDownload } from "react-icons/fc";
 
 // // Import your resume PDF file
-import ResumePDF from '../../../images/Resume of Asaduzzaman.pdf';
+import ResumePDF from '../../../images/Resume of Asaduzzamn.pdf';
 
 const Banner = () => {
 
